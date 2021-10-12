@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startgame</title>
+    <style>
+        body{
+            background: url(../colorgame/pic/color.jpg);
+            
+        }
+        .mydiv{
+            width: 200px;
+            height: 200px;
+            color: wheat;
+            margin: 200px auto;
+            background-color: brown;
+            padding: 30px;
+            font-weight: bolder;
+            animation-name: colorchange;
+            animation-duration: 15s;
+            animation-iteration-count: 5;
+        }
+        @keyframes colorchange{
+            0%{background-color : brown;}
+            25%{background-color :orange;}
+            50%{background-color : yellow;}
+            75%{background-color : yellowgreen;}
+            100%{background-color : burlywood;}
+        }
+        h1{
+            color: wheat;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mydiv"><a href="level 1.html"><h1>Start Game</h1></a></div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 1</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        h1{
+            text-shadow: 2px 1px brown;
+            color: tomato;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: tomato;
+        }
+        .card{
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            float: left;
+            width: 200px;
+            padding: 5px;
+            margin-left: 70px;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+        .card3:hover{
+            width: 100px;
+        }
+        .card:hover{
+            width: 200px;
+        }
+       .card-header{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size:40px
+        }
+        .card-container{
+            padding: 10px;
+            background: white;
+        }
+        .card2{
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            float: left;
+            width: 200px;
+            padding: 5px;
+            margin-left: 500px;
+            margin-top: -310px;
+           
+        }
+       .card-header2{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size:40px
+        }
+        .card-container2{
+            padding: 10px;
+            background: white;}
+
+            .card3{
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            float: left;
+            width: 200px;
+            padding: 5px;
+            margin-left: 500px;
+            margin-top: -310px;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+       .card-header3{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            font-size:40px
+        }
+        .card-container3{
+            padding: 10px;
+            background: white;}
+       /* *{
+            box-sizing: border-box;
+        }
+        #clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }*/
+        
+    </style>
+</head>
+<body>
+    <h1>LEVEL 1</h1>
+    <h2>Click on the box that won't change in Size to win</h2>
+        <div class="card">
+            <div class="card-header">
+                <h1 style="color: white;">3</h1>
+        
+            </div>
+            <div class="card-container">
+                <p>Box 3</p>
+            </div>
+            <button type="button" onclick="myFunction2()" style="text-align: right;color:black;">Click Me!</button>
+
+            <p id="me2">Do you really think i won't change in size?</p>
+            
+            <script style="color: blanchedalmond;">
+            function myFunction2() { 
+              document.getElementById("me2").innerHTML = "passed!";
+            }
+            </script>
+            <br>
+            <div class="card2">
+                <div class="card-header2">
+                    <h1 style="color: white;">1</h1>
+            
+                </div>
+                <div class="card-container2">
+                    <p>Box 1</p>
+                </div>
+                <button type="button" onclick="myFunction1()" style="text-align:right ;color: black;">Click me</button>
+                <p id="me1">Do you really think i won't change in size?</p>
+                <script style="color: blanchedalmond;">
+                function myFunction1(){ document.getElementById("me1").innerHTML = "passed!";
+                    }
+                    </script>
+                <br>
+                <div class="card3">
+                    <div class="card-header3">
+                        <h1 style="color: white;">2</h1>
+                
+                    </div>
+                    <div class="card-container3">
+                        <p>Box 2</p>
+                    </div>
+                    <button type="button" onclick="myFunction()" style="text-align: right;color:black;">Click Me!</button>
+
+                    <p id="me">Do you really think i won't change in size?</p>
+                    
+                    <script style="color: blanchedalmond;">
+                    function myFunction() { 
+                      document.getElementById("me").innerHTML = "failed!";
+                    }
+                    </script>
+</body>
+</html>
